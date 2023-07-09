@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+        1. 변수 - 변하는 값을 저장하는 저장공간(그릇)
+        2. 형식
+            var 변수명 = 값;
+
+        3. 변수명 규칙
+            1. 영문자, 숫자, $ 혼용할 수 있다
+            2. 대소문자 구별한다. a = A 다르다
+            3. 한글, 예약어(int, String 같은 사용하는 언어) 특수문자 사용할수 없다.
+            4. 첫글자 반드시 숫자를 제외한 영어 (주로 소문자로 시작)
+            
+            var 그릇1 = 밥 => 밥그릇
+            var 그릇2 = 국 => 국그릇
+            var 그릇3 = 콜라 -> 음료수 그릇
+            var 선언문
+                그릇1 => 변수
+    </pre>
+    <script>
+      // var name = "더조은";
+      // var age = 20;
+      // var addr = "서울시 서초구 서산빌딩 5층";
+      // var sex = "남자";
+
+      // 한번에 초기화
+      // var name = "더조은",
+      //   age = 20,
+      //   addr = "서울시 서초구 서산빌딩 5층",
+      //   sex = "남자";
+
+      // 한번에 선언 후 변수 생성
+      // var name, age, addr, sex;
+      // name = "더조은";
+      // age = 20;
+      // addr = "서울시 서초구 서산빌딩 4층";
+      // sex = "남자";
+
+      // null로 초기화 후 변수 할당
+      // 타입을 초기화시켜주고 변수 할당
+      // 가장 많이 쓰이는 방법.
+      var name = "",
+        age = 0,
+        addr = "",
+        sex = "";
+      name = "더조은";
+      age = 20;
+      addr = "서울시 서초구 서산빌딩 4층";
+      sex = "남자";
+
+      // 여러번 생성으로 초기화 시키는 방법은 좋지 않음(컴퓨터가 여러번 일을 해야함.)
+      // var name = "강호동";
+      // var name = "홍길동";
+      // var name = "유재석";
+
+      // 한번의 생성 후 할당으로 변경해주기
+      var name = "강호동";
+      name = "홍길동";
+      name = "유재석";
+
+      document.write("이름:" + name + "<br/>");
+      document.write("나이:" + age + "<br/>");
+      document.write("주소:" + addr + "<br/>");
+      document.write("성별:" + sex);
+    </script>
+  </body>
+</html>
