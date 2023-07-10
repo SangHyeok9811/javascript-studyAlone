@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   /*
+      //     외부값 입력받기
+      //     조건
+      //     20이상 성년
+      //     그렇지 않으면 미성년
+      //     */
+      //   var age;
+      //   age = prompt("나이를 입력하세요");
+      //   age = parseInt(age);
+      //   if (age >= 20) {
+      //     alert("성년입니다.");
+      //   } else {
+      //     alert("미성년입니다.");
+      //   }
+
+      //   /*
+      //       1. 외부값 입력받기
+      //       2. 짝수 / 홀수 판단
+      //       */
+      //   let num;
+      //   num = prompt("숫자를 입력하세요");
+      //   num = parseInt(num);
+      //   if (num % 2 == 0) {
+      //     alert("짝수입니다.");
+      //   } else {
+      //     alert("홀수입니다.");
+      //   }
+
+      // /*
+      //     3의 배수인지를 확인하는거
+      //     */
+      // let num1;
+      // num1 = prompt("숫자를 입력하세요");
+      // num1 = parestInt(num1);
+      // if (num1 % 3 == 0) {
+      //     alert("3의 배수입니다.");
+      // } else {
+      //     alert("3의 배수가 아닙니다.");
+      // }
+
+      //   /*
+      //         양수 음수 출력
+      //         */
+      //   var num2 = prompt("양수/음수를 입력하세요");
+      //   num2 = parseInt(num2);
+      //   if (num2 > 0) {
+      //     alert("양수입니다.");
+      //   } else if (num2 < 0) {
+      //     alert("음수입니다.");
+      //   } else if (num2 == 0) {
+      //     alert("0 입니다.");
+      //   } else {
+      //     alert("잘못된 입력입니다.");
+      //   }
+
+      /*
+        1. 국어
+        2. 영어
+        3. 수학
+        4. 합계
+        5. 평균값
+        6. 90이상이면 A, 80이상이면 B, 70이상이면 C, 그 외 F
+        */
+      var kor, eng, math;
+      kor = prompt("국어 점수");
+      eng = prompt("영어 점수");
+      math = prompt("수학 점수");
+      kor = parseInt(kor);
+      eng = parseInt(eng);
+      math = parseInt(math);
+      var sum, avg;
+      sum = 0;
+      avg = 0;
+      sum = kor + eng + math;
+      avg = sum / 3;
+
+      if (avg >= 90) {
+        alert("A학점 입니다");
+      } else if (avg >= 80) {
+        alert("B학점 입니다.");
+      } else if (avg >= 70) {
+        alert("C학점 입니다.");
+      } else {
+        alert("F학점 입니다.");
+      }
+
+      alert(avg);
+    </script>
+  </body>
+</html>

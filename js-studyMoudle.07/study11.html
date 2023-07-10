@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var pass = "1234";
+      var num = "";
+      //   // for (;;) 무한반복
+      //   for (;;) {
+      //     num = prompt("비밀번호를 입력하세요");
+      //     if (pass == num) {
+      //       alert("비밀번호 일치");
+      //       break;
+      //     } else {
+      //       alert("비밀번호가 일치하지 않습니다. 다시 입력하세요");
+      //     }
+      //   }
+      while (true) {
+        num = prompt("비밀번호를 입력하세요");
+        if (pass == num) {
+          alert("비밀번호 일치");
+          break;
+        } else {
+          alert("비밀번호가 일치하지 않습니다. 다시 입력하세요");
+        }
+      }
+    </script>
+  </body>
+</html>

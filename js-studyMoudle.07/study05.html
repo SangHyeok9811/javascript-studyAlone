@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var num = prompt("숫자를 입력하세요");
+      var result = 0;
+      num = parseInt(num);
+
+      document.write(num + "단 <br/>");
+      for (var i = 1; i <= 9; i++) {
+        result = num * i;
+        document.write(num + " x " + i + " = " + result + "<br/>");
+      }
+    </script>
+  </body>
+</html>
