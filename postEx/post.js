@@ -34,7 +34,7 @@ function createSection(no, title, content, creatorName, createdTime) {
 
 // 추가폼 처리
 (() => {
-  const form = document.querySelector("form");
+  const form = document.querySelectorAll("form")[0];
   const input = form.querySelector("input");
   const inputContent = form.querySelector("textarea");
 
