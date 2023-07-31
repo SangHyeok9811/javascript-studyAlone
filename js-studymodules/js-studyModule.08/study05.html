@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function make(num1, num2, num3) {
+        var result = num1 + num2 + num3;
+        return result;
+      }
+
+      let sum = make(1, 2, 3);
+      alert(sum);
+      alert(make(11, 22, 33));
+
+      let make2 = (num1, num2, num3) => num1 + num2 + num3;
+      alert(make(1, 2, 3));
+    </script>
+  </body>
+</html>
